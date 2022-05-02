@@ -78,7 +78,7 @@ header {
 }
 
 body{
-    background-image: url("images/blue-1634110.png");
+    background-image: url("../images/blue-1634110.png");
     background-repeat: no-repeat;
     background-position: center fixed;
     -webkit-background-size: cover;
