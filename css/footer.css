@@ -1,0 +1,50 @@
+footer {
+   background-color: #0d3059F0;
+   align-self: flex-end;
+}
+
+.footer {
+   display: flex;
+   flex-direction: column;
+   min-height: 300px;
+   font-size: 20px;
+}
+
+.footer-div {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   max-width: 1000px;
+   justify-items: center;
+   margin: auto;
+   padding: 10px;
+}
+
+.footer h5 {
+   color: #CBBE46;
+   align-items: center;
+   justify-items: center;
+   font-size: 24px;
+}
+
+.footer>h5 {
+   text-align: center;
+   margin: 10px;
+   border-top: 1px dotted white;
+}
+
+.footer a {
+   text-decoration: underline;
+   font-weight: lighter;
+}
+
+
+/*.frame-main :hover{
+    border: 1px solid yellow;
+}
+
+.footer :hover{
+    border: 1px solid yellow;
+ }
+ .added-oferts :hover{
+    border: 1px solid white;
+}*/

@@ -5,17 +5,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Empleos</title>
+    <title>Inicio</title>
 
-    <link rel="stylesheet" href="styles/style.css">
+    <script src="https://kit.fontawesome.com/7f3c790161.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/search-bar.css">
+    <link rel="stylesheet" href="css/frequent-search.css">
+    <link rel="stylesheet" href="css/added-oferts.css">
+    <link rel="stylesheet" href="css/Opportunity-sector.css">
+    <link rel="stylesheet" href="css/footer.css">
 
 </head>
 
 <body>
     <header>
         <div class="nav-menu">
-            <a href="">
-                <ul>
+            <a href="/index.html">
+                <ul class="nav-menu-horizontal">
                     <li><img class="logo-header" src="images/logo.jpg"></li>
                     <li>
                         <h1 href="">Ofertas de Empleo</h1>
@@ -23,15 +30,30 @@
                 </ul>
             </a>
             <nav>
-                <ul>
-                    <li><a href="">Inicio</a></li>
+                <ul class="nav-menu-horizontal">
+                    <li><a href="/index.html">Inicio </a></li>
                     <li><a href="">Buscar Empleo</a></li>
                     <li><a href="">Sobre Nosotros</a></li>
-                    <li><input class="nav-menu-btnRegi" type="button" name="btnRegi" value="Registrarse"></li>
-                    <li><input class="nav-menu-btnIni" type="button" name="btnIni" value="Iniciar sesión"></li>
+
+                    <li>
+                        <a href="" class="nav-menu-btnRegi">Registrarse
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </a>
+                        
+                        <ul class="nav-menu-vertical">
+                            <div>
+                                <li><a href="">Como Usuario</a></li>
+                                <li><a href="">Como Empresa</a></li>
+                            </div>
+                        </ul>
+                    </li>
+                    <li><a href="/login.html" class="nav-menu-btnIni">Iniciar sesión</a></li>
+
+
                 </ul>
-                
+
             </nav>
+
             <button class="btn-menu">tocame</button>
         </div>
     </header>
@@ -53,12 +75,24 @@
                     <h4>Búsquedas Frecuentes.</h4>
                 </div>
                 <div class="frequent-search-items">
-                    <a href="">Trabajo desde casa</a>
-                    <a href="">Ventas & Negocios</a>
-                    <a href="">IT & Software</a>
-                    <a href="">Ingeniería</a>
-                    <a href="">Atención al Cliente</a>
-                    <a href="">Comercial</a>
+                    <a href="">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        Trabajo desde casa</a>
+                    <a href="">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        Ventas & Negocios</a>
+                    <a href="">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        IT & Software</a>
+                    <a href="">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        Ingeniería</a>
+                    <a href="">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        Atención al Cliente</a>
+                    <a href="">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        Comercial</a>
                 </div>
             </section>
 
@@ -203,7 +237,13 @@
 
                 </div>
             </div>
-            <h5>All Rights Reserved. © 2022 Ofertas De Empleo.</h5>
+            <h5>
+                All Rights Reserved. © 2022 Ofertas De Empleo.
+                <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+            </h5>
         </div>
     </footer>
 

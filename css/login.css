@@ -1,0 +1,60 @@
+main > div{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    gap: 2rem;
+    width: 500px;
+    height: 100vh;
+}
+
+main div >a{
+    text-decoration: underline;
+}
+
+i{
+    font-size: 80px;
+}
+
+.text-box{
+    border-radius: 10px;
+    height: 40px;
+    color: black;
+    font-size: 20px;
+}
+.btn{
+    background-color: #0D3159;
+    padding: 10px;
+    border-radius: 10px;    
+    border: 1px solid black;
+    font-size: 20px;
+}
+
+.btn2{
+    background-color: #0D3159;
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: underline;
+    border: 1px solid black;
+    font-size: 20px;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.user-name{
+    display: flex;
+    flex-direction: column;
+}
+
+.password{
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-area{
+    display: flex;
+    justify-content: space-between;
+}
