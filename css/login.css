@@ -29,6 +29,8 @@ i{
     font-size: 20px;
 }
 
+
+
 .btn2{
     background-color: #0D3159;
     padding: 10px;
@@ -57,4 +59,10 @@ i{
 .btn-area{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+.nav-menu-vertical{
+    width: 317px;
+    border-color: black;
 }

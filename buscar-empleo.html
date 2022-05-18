@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscar Empleo</title>
+
+    <script src="https://kit.fontawesome.com/7f3c790161.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/search-bar.css">
+    <link rel="stylesheet" href="css/frequent-search.css">
+    <link rel="stylesheet" href="css/added-oferts.css">
+    <link rel="stylesheet" href="css/buscar-empleo.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="nav-menu">
+            <a href="/index.html">
+                <ul class="nav-menu-horizontal">
+                    <li><img class="logo-header" src="images/logo.jpg"></li>
+                    <li>
+                        <h1 href="">Ofertas de Empleo</h1>
+                    </li>
+                </ul>
+            </a>
+            <nav>
+                <ul class="nav-menu-horizontal">
+                    <li><a href="/index.html">Inicio </a></li>
+                    <li><a href="/buscar-empleo.html">Buscar Empleo</a></li>
+                    <li><a href="/contacto.html">Sobre Nosotros</a></li>
+
+                    <li>
+                        <a href="" class="nav-menu-btnRegi">Registrarse
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </a>
+
+                        <ul class="nav-menu-vertical">
+                            <div>
+                                <li><a href="/create-account.html">Como Usuario</a></li>
+                                <li><a href="/login-company.html">Como Empresa</a></li>
+                            </div>
+                        </ul>
+                    </li>
+                    <li><a href="/login.html" class="nav-menu-btnIni">Iniciar sesión</a></li>
+
+
+                </ul>
+
+            </nav>
+
+            <button class="btn-menu">tocame</button>
+        </div>
+    </header>
+
+    <main>
+        <div class="frame-main">
+            <section>
+                <div class="bar">
+                    <input class="search-bar" type="text" placeholder="Busca trabajos, empresas, palabras clave.">
+                    <input class="search-bar-button" type="button" name="btnBusc" value="Buscar">
+                </div>
+            </section>
+
+            <div>
+                <h4>Resultados de Busqueda</h4>
+                <h4>9,999 Ofertas de trabajo de /palabra buscada/ encontradas.</h4>
+
+                <div class="menu-options">
+                    <div class="menu-filter">
+                        <div class="menu-filter-items">
+                            <label class="title">Ordenar ofertas por:</label>
+
+                            <label for="1"><input type="radio" name="a" id="1"> Fecha de publicación</label>
+                            <label for="0"> <input type="radio" name="a" id="0"> Relevancia</label>
+                        </div>
+
+                        <div class="menu-filter-items">
+                            <label class="title">Fecha:</label>
+
+                            <label for="2"><input type="radio" name="b" id="2"> Últimas 24 horas</label>
+                            <label for="3"> <input type="radio" name="b" id="3"> Últimos 7 días</label>
+                            <label for="4"> <input type="radio" name="b" id="4"> Últimos 15 días</label>
+                        </div>
+
+                        <div class="menu-filter-items">
+                            <label class="title">Sector:</label>
+
+                            <label><input type="checkbox"> Informática</label>
+                            <label> <input type="checkbox"> Comercial y Ventas</label>
+                            <label class="more">Mostrar más...</label>
+                        </div>
+
+                        <div class="menu-filter-items">
+                            <label class="title">Modalidad de trabajo:</label>
+
+                            <label><input type="checkbox"> Trabajo solo presencial</label>
+                            <label> <input type="checkbox"> Trabajo semi-presencial</label>
+                            <label class="more">Mostrar más...</label>
+                        </div>
+
+                        <div class="menu-filter-items">
+                            <label class="title">Estudios mínimos:</label>
+
+                            <label><input type="checkbox"> Educación Secundaria </label>
+                            <label> <input type="checkbox"> Universidad</label>
+                            <label class="more">Mostrar más...</label>
+                        </div>
+
+                        <div class="menu-filter-items">
+                            <label class="title">Experiencia (años):</label>
+
+                            <input id="vol" name="vol" type="range" min="0" max="10" step="1" value="0">
+                            <output name="outvol" for="vol">0</output>
+                        </div>
+
+                        <div class="menu-filter-items">
+                            <label class="title">Experiencia (años):</label>
+
+                            <input id="vol2" name="vol2" type="range" min="1" max="100" step="1" value="0">
+                            <output name="outvol2" for="vol2">0</output>
+                        </div>
+
+                        <div class="menu-filter-items">
+                            <label class="title">Jornada laboral:</label>
+
+                            <label><input type="checkbox"> Completa </label>
+                            <label> <input type="checkbox"> Indiferente</label>
+                            <label> <input type="checkbox"> Parcial - Indiferente</label>
+                            <label class="more">Mostrar más...</label>
+                        </div>
+
+                        <div class="menu-filter-items">
+                            <label class="title">Tipo de contrato:</label>
+
+                            <label><input type="checkbox"> Indefinido </label>
+                            <label> <input type="checkbox"> De duración determinada</label>
+                            <label> <input type="checkbox"> Otros contratos</label>
+                            <label> <input type="checkbox"> Autónomo</label>
+                            <label class="more">Mostrar más...</label>
+                        </div>
+
+
+                    </div>
+                    <div class="menu-oferts">
+                        <section class="added-oferts">
+                            <div>
+
+                                <a href="/buscar-empleo-info.html">
+
+                                    <h1>ESPECIALISTA DE MARKETING</h1>
+                                    <p>Se requiere Especialista de Marketing con un nivel de ingles Avanzado (B2)
+                                        con experiencia en el campo laboral de productos de Gelatina,
+                                        Galletas, Caramelos, etc...
+                                    </p>
+                                    <div>
+                                        <p class="added-oferts-line">Lun, Mar, Mie, Jue y Vier</p>
+                                        <p>Hora 8:00 am. - 5:00 pm.</p>
+                                        <div>
+                                            <p>Salario: No definido</p>
+                                            <p class="time">Publicado hace 15 segundos</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="/buscar-empleo-info.html">
+
+                                    <h1>Visitador Comercial Motorizado (Empleo Temporal)</h1>
+
+                                    <p>Descripción del Trabajo:
+                                        Realizar visitas a pulperías del país.
+                                        Registrar su visita desde una App Móvil guardando la
+                                        ubicación e información de la pulpería...
+                                    </p>
+
+                                    <div>
+                                        <p>Lun, Mar, Mie, Jue y Vier</p>
+                                        <p>Hora 8:00 am. - 5:00 pm.</p>
+                                        <div>
+                                            <p>Salario: 7000 C$</p>
+                                            <p class="time">Publicado hace 1 minuto</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="/buscar-empleo-info.html">
+
+                                    <h1>OFICIAL DE CRÉDITO</h1>
+
+
+                                    <p>Persona encargada de la administración de cartera de crédito, cumplimiento con
+                                        las
+                                        políticas
+                                        establecidas por la institución para el otorgamiento de créditos...
+                                    </p>
+
+                                    <div>
+                                        <p>Sab, Dom y Lunes</p>
+                                        <p>Hora 8:00 am. - 5:00 pm.</p>
+                                        <div>
+                                            <p>Salario: 15,000 C$</p>
+                                            <p class="time">Publicado hace 1 minuto</p>
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <a href="/buscar-empleo-info.html">
+
+                                    <h1>ESPECIALISTA DE MARKETING</h1>
+                                    <p>Se requiere Especialista de Marketing con un nivel de ingles Avanzado (B2)
+                                        con experiencia en el campo laboral de productos de Gelatina,
+                                        Galletas, Caramelos, etc...
+                                    </p>
+                                    <div>
+                                        <p class="added-oferts-line">Lun, Mar, Mie, Jue y Vier</p>
+                                        <p>Hora 8:00 am. - 5:00 pm.</p>
+                                        <div>
+                                            <p>Salario: No definido</p>
+                                            <p class="time">Publicado hace 15 segundos</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="/buscar-empleo-info.html">
+
+                                    <h1>Visitador Comercial Motorizado (Empleo Temporal)</h1>
+
+                                    <p>Descripción del Trabajo:
+                                        Realizar visitas a pulperías del país.
+                                        Registrar su visita desde una App Móvil guardando la
+                                        ubicación e información de la pulpería...
+                                    </p>
+
+                                    <div>
+                                        <p>Lun, Mar, Mie, Jue y Vier</p>
+                                        <p>Hora 8:00 am. - 5:00 pm.</p>
+                                        <div>
+                                            <p>Salario: 7000 C$</p>
+                                            <p class="time">Publicado hace 1 minuto</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="/buscar-empleo-info.html">
+
+                                    <h1>OFICIAL DE CRÉDITO</h1>
+
+
+                                    <p>Persona encargada de la administración de cartera de crédito, cumplimiento con
+                                        las
+                                        políticas
+                                        establecidas por la institución para el otorgamiento de créditos...
+                                    </p>
+
+                                    <div>
+                                        <p>Sab, Dom y Lunes</p>
+                                        <p>Hora 8:00 am. - 5:00 pm.</p>
+                                        <div>
+                                            <p>Salario: 15,000 C$</p>
+                                            <p class="time">Publicado hace 1 minuto</p>
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <a href="/buscar-empleo-info.html">
+
+                                    <h1>ESPECIALISTA DE MARKETING</h1>
+                                    <p>Se requiere Especialista de Marketing con un nivel de ingles Avanzado (B2)
+                                        con experiencia en el campo laboral de productos de Gelatina,
+                                        Galletas, Caramelos, etc...
+                                    </p>
+                                    <div>
+                                        <p class="added-oferts-line">Lun, Mar, Mie, Jue y Vier</p>
+                                        <p>Hora 8:00 am. - 5:00 pm.</p>
+                                        <div>
+                                            <p>Salario: No definido</p>
+                                            <p class="time">Publicado hace 15 segundos</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="/buscar-empleo-info.html">
+
+                                    <h1>Visitador Comercial Motorizado (Empleo Temporal)</h1>
+
+                                    <p>Descripción del Trabajo:
+                                        Realizar visitas a pulperías del país.
+                                        Registrar su visita desde una App Móvil guardando la
+                                        ubicación e información de la pulpería...
+                                    </p>
+
+                                    <div>
+                                        <p>Lun, Mar, Mie, Jue y Vier</p>
+                                        <p>Hora 8:00 am. - 5:00 pm.</p>
+                                        <div>
+                                            <p>Salario: 7000 C$</p>
+                                            <p class="time">Publicado hace 1 minuto</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </section>
+                        <section>
+                            <aside>
+                                <img class="publisher" src="images/banner-adidas.jpg">
+                            </aside>
+                        </section>
+                    </div>
+                </div>
+            </div>
+
+            <div class="number-page">
+                <a class="number-page-selected" href="/buscar-empleo.html">1</a>
+                <a href="/buscar-empleo.html">2</a>
+                <a href="/buscar-empleo.html">3</a>
+                <a href="/buscar-empleo.html">4</a>
+                <a href="/buscar-empleo.html">5</a>
+                <a href="/buscar-empleo.html">Siguiente ></a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="footer-div">
+                <div>
+                    <h5>Acerca de nosotros</h5>
+                    <p>
+                        Innovación tecnológica para la gestión de empleos.
+                        <br>
+                        <br>
+                        Soluciones en la contratación de su personal,
+                        uso de filtros avanzados en nuestra base de propectos.
+                    </p>
+                </div>
+                <div>
+                    <h5>Páginas frecuentes</h5>
+                    <ul>
+                        <li>
+                            <a href="/index.html">Inicio</a>
+                        </li>
+                        <li>
+                            <a href="/contacto.html">Nosotros</a>
+                        </li>
+                        <li><a href="/contacto.html">Contáctanos</a></li>
+                    </ul>
+
+                </div>
+                <div>
+                    <h5>Detalles de contacto</h5>
+                    <ul>
+                        <li>
+                            <a href="">Ofertasdeempleo@gmail.com</a>
+                        </li>
+                        <li>
+                            <a href="">Ofertadeempleo.com</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+            <h5>
+                All Rights Reserved. © 2022 Ofertas De Empleo.
+                <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+            </h5>
+        </div>
+    </footer>
+
+</body>
+
+
+</html>

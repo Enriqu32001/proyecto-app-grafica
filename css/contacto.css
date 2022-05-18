@@ -1,0 +1,43 @@
+body{
+    height: 100vh;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+.about{
+    display: flex;
+    flex-direction: column;
+    max-width: 1440px;
+    margin: auto;
+    padding: 50px;
+    background-color: #0d30597b;
+    border-radius: 10px;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    align-content: center; 
+}
+
+.about-us{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 1000px;
+    gap: 20px;
+}
+
+.about-mision-vision{
+    display: flex;
+    text-align: center;
+    max-width: 1000px;
+    gap: 20px;
+}
+
+p{
+    width: 500px;
+}
