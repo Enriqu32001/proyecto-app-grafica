@@ -48,3 +48,17 @@ footer {
  .added-oferts :hover{
     border: 1px solid white;
 }*/
+
+@media (max-width: 965px) {
+   .footer-div {
+      display: flex;
+      flex-direction: column;
+      padding: 10px;
+      width: 800px;
+      gap: 20px;
+      justify-items: start;
+   }
+   .footer-div >div p{
+      width: 100%;
+   }
+}

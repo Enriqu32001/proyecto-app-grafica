@@ -1,13 +1,15 @@
-.logo-header {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-}
 header{
     background-color: rgba(0, 0, 0, 0.20);
     padding: auto;
     display: flex;
 }
+
+.logo-header {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
 .nav-menu{
     display: flex;
     padding: 0 50px;
@@ -66,7 +68,7 @@ header{
 }
 
 .nav-menu li{
-    margin-right: 0.5rem;
+    margin-right: 2rem;
     font-weight: lighter;
     
 }
@@ -104,3 +106,69 @@ header{
     white-space: nowrap;
     overflow: hidden;
 }
+
+.profile{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    gap: 10px;
+}
+.profile > i{
+    font-size: 30px; 
+    height: 100%;    
+}
+
+.nav-profile{
+    width: auto;
+}
+
+@media (max-width: 1000px){
+    .nav-menu-btnIni{
+        display: none;
+    }
+    .nav-menu-btnRegi{
+        display: none;
+    }
+    .added-oferts div a{
+        display: none;
+    }
+    .added-oferts .mobile{
+        display: block;
+    }
+    .frequent-search div a{
+        display: none;
+    }    
+    .frequent-search .mobile{
+        display: block;
+    }
+
+    .Opportunity-sector .as a{
+        display:none;
+    }    
+    .Opportunity-sector .as .mobile{
+        display: block;
+    }
+
+    .mobile2{
+        display: none;
+    }
+
+
+
+    /*nav ul{
+        
+        flex-direction: column;
+        background-color: #777777;
+        position: fixed;
+        left: 0;
+        top: 80px;
+        width: 100%;
+        padding: 50px 0;
+        gap: 20px;
+        height: calc(100% - 80px);
+        overflow-y: auto;
+    }*/
+}
+
+
+

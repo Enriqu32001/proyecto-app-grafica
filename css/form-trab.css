@@ -1,0 +1,39 @@
+.profile-info{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    max-width: 1440px;
+    padding: 100px;
+}
+
+.profile-info-colums{
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    gap: 20px;
+    
+}
+
+.profile-info-img{
+    display: flex;
+    flex-direction: column;
+    max-width: auto;
+    align-items: center;
+    
+}
+.profile-info-img img{
+    width: 200px;
+    border-radius: 10px;
+}
+
+.est-re {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-save {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    margin-top: 50px;
+}

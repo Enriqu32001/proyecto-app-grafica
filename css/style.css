@@ -14,6 +14,7 @@
 
 body{
     background-image: url("../images/blue-1634110.png");
+    background-color: #0D3159;
     background-repeat: no-repeat;
     background-position: center fixed;
     -webkit-background-size: cover;
@@ -60,17 +61,29 @@ body{
     display: none;
  }
 
- @media (max-width: 780px){
+ @media (max-width: 965px){
     .footer-div{
         display: grid;
         grid-template-columns: 1fr;
         padding: 10px;
-        width: 500px;
+        width: 800px;
         gap: 20px;
         justify-items: start;
     }
 
-    nav ul{
+    .nav-menu-horizontal{
+        display: none;
+    }
+    
+    .nav-menu-btnRegi{
+        border-radius: 10px;
+    }
+    .nav-menu-btnIni{
+        border-radius: 10px;
+    }
+
+    /*nav ul{
+        
         flex-direction: column;
         background-color: #777777;
         position: fixed;
@@ -79,12 +92,13 @@ body{
         width: 100%;
         padding: 50px 0;
         gap: 20px;
-        
         height: calc(100% - 80px);
         overflow-y: auto;
-    }
+    }*/
 
-    nav ul li :hover{
+    
+
+    /*nav ul li :hover{
         border: 1px solid #0D3159;
         
     }
@@ -97,7 +111,7 @@ body{
 
     .btn-menu{
         display:block;
-    }
+    }*/
 
 
  }
