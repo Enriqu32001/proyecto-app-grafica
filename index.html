@@ -10,6 +10,8 @@
     <script src="https://kit.fontawesome.com/7f3c790161.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/login-company.css">
     <link rel="stylesheet" href="css/search-bar.css">
     <link rel="stylesheet" href="css/frequent-search.css">
     <link rel="stylesheet" href="css/added-oferts.css">
@@ -18,236 +20,347 @@
 
 </head>
 
-<body>
-    <header>
-        <div class="nav-menu">
-            <a href="index.html">
-                <ul class="nav-menu-horizontal">
-                    <li><img class="logo-header" src="images/logo.jpg"></li>
-                    <li>
-                        <h1 href="">Ofertas de Empleo</h1>
-                    </li>
-                </ul>
-            </a>
-            
-            <nav>
-                <ul class="nav-menu-horizontal">
-                    <li><a href="index.html">Inicio </a></li>
-                    <li><a href="buscar-empleo.html">Buscar Empleo</a></li>
-                    <li><a href="contacto.html">Sobre Nosotros</a></li>
-
-                    <li class="mobile2">
-                        <a href="" class="nav-menu-btnRegi">Registrarse
-                            <i class="fa-solid fa-chevron-down"></i>
-                        </a>
-
-                        <ul class="nav-menu-vertical">
-                            <div>
-                                <li><a href="create-account.html">Como Usuario</a></li>
-                                <li><a href="login-company.html">Como Empresa</a></li>
-                            </div>
-                        </ul>
-                    </li>
-                    <li class="mobile2"><a href="login.html" class="nav-menu-btnIni">Iniciar sesión</a></li>
-
-
-                </ul>
-
-            </nav>
-
-            <button class="btn-menu">tocame</button>
-        </div>
-    </header>
-
-    <main>
-        <div class="frame-main">
-            <section>
-                <div>
-                    <h3>Encuentra tu trabajo ideal.</h3>
-                </div>
-                <div class="bar">
-                    <input class="search-bar" type="search" placeholder="Busca trabajos, empresas, palabras clave.">
-                    <input class="search-bar-button" type="button" name="btnBusc" value="Buscar">
-                </div>
-            </section>
-
-            <section class="frequent-search">
-                <div>
-                    <h4>Búsquedas Frecuentes.</h4>
-                </div>
-                <div class="frequent-search-items">
-                    <a class="mobile" href="buscar-empleo.html">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                        Trabajo desde casa</a>
-                    <a class="mobile" href="buscar-empleo.html">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                        Ventas & Negocios</a>
-                    <a href="buscar-empleo.html">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                        IT & Software</a>
-                    <a href="buscar-empleo.html">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                        Ingeniería</a>
-                    <a href="buscar-empleo.html">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                        Atención al Cliente</a>
-                    <a href="buscar-empleo.html">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                        Comercial</a>
-                </div>
-            </section>
-
-            <section class="added-oferts">
-
-                <h4>Últimas Ofertas Agregadas.</h4>
-                <div>
-                    <a class="mobile" href="/buscar-empleo-info.html">
-
-                        <h1>ESPECIALISTA DE MARKETING</h1>
-                        <p>Se requiere Especialista de Marketing con un nivel de ingles Avanzado (B2)
-                            con experiencia en el campo laboral de productos de Gelatina,
-                            Galletas, Caramelos, etc...
-                        </p>
-                        <div>
-                            <p class="added-oferts-line">Lun, Mar, Mie, Jue y Vier</p>
-                            <p>Hora 8:00 am. - 5:00 pm.</p>
-                            <div>
-                                <p>Salario: No definido</p>
-                                <p class="time">Publicado hace 15 segundos</p>
-                            </div>
-                        </div>
-                    </a>
-                    <a  href="buscar-empleo-info.html">
-
-                        <h1>Visitador Comercial Motorizado (Empleo Temporal)</h1>
-
-                        <p>Descripción del Trabajo:
-                            Realizar visitas a pulperías del país.
-                            Registrar su visita desde una App Móvil guardando la
-                            ubicación e información de la pulpería...
-                        </p>
-
-                        <div>
-                            <p>Lun, Mar, Mie, Jue y Vier</p>
-                            <p>Hora 8:00 am. - 5:00 pm.</p>
-                            <div>
-                                <p>Salario: 7000 C$</p>
-                                <p class="time">Publicado hace 1 minuto</p>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="buscar-empleo-info.html">
-
-                        <h1>OFICIAL DE CRÉDITO</h1>
-
-
-                        <p>Persona encargada de la administración de cartera de crédito, cumplimiento con las
-                            políticas
-                            establecidas por la institución para el otorgamiento de créditos...
-                        </p>
-
-                        <div>
-                            <p>Sab, Dom y Lunes</p>
-                            <p>Hora 8:00 am. - 5:00 pm.</p>
-                            <div>
-                                <p>Salario: 15,000 C$</p>
-                                <p class="time">Publicado hace 1 minuto</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <a href="buscar-empleo.html">Ver Más Ofertas.</a>
-            </section>
-
-            <section>
-                <aside>
-                    <img class="publisher" src="images/banner-adidas.jpg">
-                </aside>
-            </section>
-
-            <section class="Opportunity-sector">
-
-                <h3>Sectores con más oportunidades</h3>
-                <div class="as">
-                    <a class="mobile" href="buscar-empleo.html">
-                        <img src="images/AdobeStock_282660820-min2-.webp" width="500">
-                        <p>Agricola</p>
-                    </a>
-                    <a href="buscar-empleo.html">
-                        <img src="images/pic-home-sectores-comercial.jpg" width="500">
-                        <p>Comercial y Ventas</p>
-                    </a>
-                    <a href="buscar-empleo.html">
-                        <img src="images/pic-home-sectores-directivos.jpg" width="500">
-                        <p>Directivos</p>
-                    </a>
-                    <a href="buscar-empleo.html">
-                        <img src="images/pic-home-sectores-informatica.jpg" width="500">
-                        <p>Informática</p>
-                    </a>
-                    <a href="buscar-empleo.html">
-                        <img src="images/carrera-industria-automotriz-mx-gr.jpg" width="500">
-                        <p>Industria Automotriz</p>
-                    </a>
-                    <a href="buscar-empleo.html">
-                        <img src="images/pic-home-sectores-sanidad.jpg" width="500">
-                        <p>Sanidad y Salud</p>
-                    </a>
-                </div>
-                <a href="buscar-empleo.html">Ver Más Sectores.</a>
-            </section>
-        </div>
-    </main>
-
-    <footer>
-        <div class="footer">
-            <div class="footer-div">
-                <div>
-                    <h5>Acerca de nosotros</h5>
-                    <p>
-                        Innovación tecnológica para la gestión de empleos.
-                        <br>
-                        <br>
-                        Soluciones en la contratación de su personal,
-                        uso de filtros avanzados en nuestra base de propectos.
-                    </p>
-                </div>
-                <div>
-                    <h5>Páginas frecuentes</h5>
-                    <ul>
+<body >
+    <div class="container">
+        <header >
+            <div class="nav-menu">
+                <a href="index.html">
+                    <ul class="nav-menu-horizontal">
+                        <li><img class="logo-header" src="images/logo.jpg"></li>
                         <li>
-                            <a href="index.html">Inicio</a>
-                        </li>
-                        <li>
-                            <a href="contacto.html">Nosotros</a>
-                        </li>
-                        <li><a href="contactenos.html">Contáctanos</a></li>
-                    </ul>
-
-                </div>
-                <div>
-                    <h5>Detalles de contacto</h5>
-                    <ul>
-                        <li>
-                            <a href="">Ofertasdeempleo@gmail.com</a>
-                        </li>
-                        <li>
-                            <a href="">Ofertadeempleo.com</a>
+                            <h1 href="">Ofertas de Empleo</h1>
                         </li>
                     </ul>
-
-                </div>
+                </a>
+    
+                <nav>
+                    <ul class="nav-menu-horizontal">
+                        <li><a href="index.html">Inicio </a></li>
+                        <li><a href="buscar-empleo.html">Buscar Empleo</a></li>
+                        <li><a href="contacto.html">Sobre Nosotros</a></li>
+    
+                        <li class="mobile2">
+                            <a  class="nav-menu-btnRegi">Registrarse
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </a>
+    
+                            <ul class="nav-menu-vertical">
+                                <div>
+                                    <li onclick="signupUserToggle()"><a >Como Usuario </a></li>
+                                    <li onclick="signupCompanyToggle()"><a >Como Empresa</a></li>
+                                </div>
+                            </ul>
+                        </li>
+                        <li class="mobile2" onclick="loginToggle()">
+                            <a  class="nav-menu-btnIni">Iniciar sesión</a>
+                        </li>
+                    </ul>
+                </nav>
+    
+                <button class="btn-menu">tocame</button>
             </div>
-            <h5>
-                All Rights Reserved. © 2022 Ofertas De Empleo.
-                <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
-                <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
-                <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
-            </h5>
+        </header>
+    
+    
+        <main >
+            <div class="frame-main">
+                <section>
+                    <div>
+                        <h3>Encuentra tu trabajo ideal.</h3>
+                    </div>
+                    <div class="bar">
+                        <input class="search-bar" type="search" placeholder="Busca trabajos, empresas, palabras clave.">
+                        <input class="search-bar-button" type="button" name="btnBusc" value="Buscar">
+                    </div>
+                </section>
+    
+                <section class="frequent-search">
+                    <div>
+                        <h4>Búsquedas Frecuentes.</h4>
+                    </div>
+                    <div class="frequent-search-items">
+                        <a class="mobile" href="buscar-empleo.html">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            Trabajo desde casa</a>
+                        <a class="mobile" href="buscar-empleo.html">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            Ventas & Negocios</a>
+                        <a href="buscar-empleo.html">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            IT & Software</a>
+                        <a href="buscar-empleo.html">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            Ingeniería</a>
+                        <a href="buscar-empleo.html">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            Atención al Cliente</a>
+                        <a href="buscar-empleo.html">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            Comercial</a>
+                    </div>
+                </section>
+    
+                <section class="added-oferts">
+    
+                    <h4>Últimas Ofertas Agregadas.</h4>
+                    <div>
+                        <a class="mobile" href="/buscar-empleo-info.html">
+    
+                            <h1>ESPECIALISTA DE MARKETING</h1>
+                            <p>Se requiere Especialista de Marketing con un nivel de ingles Avanzado (B2)
+                                con experiencia en el campo laboral de productos de Gelatina,
+                                Galletas, Caramelos, etc...
+                            </p>
+                            <div>
+                                <p class="added-oferts-line">Lun, Mar, Mie, Jue y Vier</p>
+                                <p>Hora 8:00 am. - 5:00 pm.</p>
+                                <div>
+                                    <p>Salario: No definido</p>
+                                    <p class="time">Publicado hace 15 segundos</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="buscar-empleo-info.html">
+    
+                            <h1>Visitador Comercial Motorizado (Empleo Temporal)</h1>
+    
+                            <p>Descripción del Trabajo:
+                                Realizar visitas a pulperías del país.
+                                Registrar su visita desde una App Móvil guardando la
+                                ubicación e información de la pulpería...
+                            </p>
+    
+                            <div>
+                                <p>Lun, Mar, Mie, Jue y Vier</p>
+                                <p>Hora 8:00 am. - 5:00 pm.</p>
+                                <div>
+                                    <p>Salario: 7000 C$</p>
+                                    <p class="time">Publicado hace 1 minuto</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="buscar-empleo-info.html">
+    
+                            <h1>OFICIAL DE CRÉDITO</h1>
+    
+    
+                            <p>Persona encargada de la administración de cartera de crédito, cumplimiento con las
+                                políticas
+                                establecidas por la institución para el otorgamiento de créditos...
+                            </p>
+    
+                            <div>
+                                <p>Sab, Dom y Lunes</p>
+                                <p>Hora 8:00 am. - 5:00 pm.</p>
+                                <div>
+                                    <p>Salario: 15,000 C$</p>
+                                    <p class="time">Publicado hace 1 minuto</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+    
+                    <a href="buscar-empleo.html">Ver Más Ofertas.</a>
+                </section>
+    
+                <section>
+                    <aside>
+                        <img class="publisher" src="images/banner-adidas.jpg">
+                    </aside>
+                </section>
+    
+                <section class="Opportunity-sector">
+    
+                    <h3>Sectores con más oportunidades</h3>
+                    <div class="as">
+                        <a class="mobile" href="buscar-empleo.html">
+                            <img src="images/AdobeStock_282660820-min2-.webp" width="500">
+                            <p>Agricola</p>
+                        </a>
+                        <a href="buscar-empleo.html">
+                            <img src="images/pic-home-sectores-comercial.jpg" width="500">
+                            <p>Comercial y Ventas</p>
+                        </a>
+                        <a href="buscar-empleo.html">
+                            <img src="images/pic-home-sectores-directivos.jpg" width="500">
+                            <p>Directivos</p>
+                        </a>
+                        <a href="buscar-empleo.html">
+                            <img src="images/pic-home-sectores-informatica.jpg" width="500">
+                            <p>Informática</p>
+                        </a>
+                        <a href="buscar-empleo.html">
+                            <img src="images/carrera-industria-automotriz-mx-gr.jpg" width="500">
+                            <p>Industria Automotriz</p>
+                        </a>
+                        <a href="buscar-empleo.html">
+                            <img src="images/pic-home-sectores-sanidad.jpg" width="500">
+                            <p>Sanidad y Salud</p>
+                        </a>
+                    </div>
+                    <a href="buscar-empleo.html">Ver Más Sectores.</a>
+                </section>
+            </div>
+        </main>
+    
+        <footer>
+            <div class="footer">
+                <div class="footer-div">
+                    <div>
+                        <h5>Acerca de nosotros</h5>
+                        <p>
+                            Innovación tecnológica para la gestión de empleos.
+                            <br>
+                            <br>
+                            Soluciones en la contratación de su personal,
+                            uso de filtros avanzados en nuestra base de propectos.
+                        </p>
+                    </div>
+                    <div>
+                        <h5>Páginas frecuentes</h5>
+                        <ul>
+                            <li>
+                                <a href="index.html">Inicio</a>
+                            </li>
+                            <li>
+                                <a href="contacto.html">Nosotros</a>
+                            </li>
+                            <li><a href="contactenos.html">Contáctanos</a></li>
+                        </ul>
+    
+                    </div>
+                    <div>
+                        <h5>Detalles de contacto</h5>
+                        <ul>
+                            <li>
+                                <a href="">Ofertasdeempleo@gmail.com</a>
+                            </li>
+                            <li>
+                                <a href="">Ofertadeempleo.com</a>
+                            </li>
+                        </ul>
+    
+                    </div>
+                </div>
+                <h5>
+                    All Rights Reserved. © 2022 Ofertas De Empleo.
+                    <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                </h5>
+            </div>
+        </footer>
+    </div>
+
+    <div class="form login-form">
+        <div class="form1 nav-menu-horizontal">
+            <div class="close" onclick="loginToggle()">&times;</div>
+            <div class="header">
+                <i class="fa-regular fa-circle-user"></i>
+                <h1>Iniciar sesión</h1>
+            </div>
+            <form method="post">
+
+                <div class=" user-name">
+                    <div class="user-name">
+                        <label class="">Nombre de Usuario</label>
+                        <input class="text-box" type="text" required>
+                    </div>
+
+                    <div class="password">
+                        <label>Contraseña</label>
+                        <input class="text-box" type="password" required>
+                    </div>
+                    <div class="btn-area-login">
+                        <input class="btn" type="submit" style="text-decoration: none;" value="Iniciar Sesion">
+                        <li>
+                            <a  class="btn2">¿Aún no tienes cuenta? mira aquí </a>
+                            <ul class="nav-menu-vertical nav-menu-vertical2">
+                                <div>
+                                    <li><a href="create-account.html">Como Usuario</a></li>
+                                    <li><a href="login-company.html">Como Empresa</a></li>
+                                </div>
+                            </ul>
+                        </li>
+                    </div>
+                    <a href="account-recovery.html">¿Olvidastes tu contraseña o tu Usuario?</a>
+
+                </div>
+            </form>
         </div>
-    </footer>
+    </div>
+
+    <div class="form signup-form-user">
+        <div class="form1 nav-menu-horizontal">
+            <div class="close" onclick="signupUserToggle()">&times;</div>
+            <div class="header">
+                <i class="fa-regular fa-circle-user"></i>
+                <h1>Registro del Usuario</h1>
+            </div>
+            <form method="post">
+                <div class="user-name">
+                    <label class="">Nombre:</label>
+                    <input class="text-box" type="text" required>
+                    <label class="">Apellido:</label>
+                    <input class="text-box" type="text" required>
+                    <label class="">Correo:</label>
+                    <input class="text-box" type="email" required>
+                    <label class="">Contraseña:</label>
+                    <input class="text-box" type="password" required>
+                    <label class="">Repita su contraseña:</label>
+                    <input class="text-box" type="password" >
+                    <div class="btn-area">
+                    <input class="btn" type="submit" value="Registrarse">
+                </div>
+                </div>
+                
+            </form>
+            
+
+        </div>
+    </div>
+
+    <div class="form signup-form-company">
+        <div class="form1 nav-menu-horizontal">
+            <div class="close" onclick="signupCompanyToggle()">&times;</div>
+            <form method="post">
+                
+                <div class="user-name">
+                    <div class="header">
+                        <i class="fa-regular fa-circle-user"></i>
+                        <h1>Registro del Representante</h1>
+                    </div>
+                    <label class="">Nombre:</label>
+                    <input class="text-box" type="text" required>
+                    <label class="">Apellido:</label>
+                    <input class="text-box" type="text" required>
+                    <label class="">Correo:</label>
+                    <input class="text-box" type="email" required>
+
+                    <div class="header">
+                        <h1>Informacion de la Empresa</h1>
+                    </div>    
+                    <label>Nombre de la Empresa:</label>
+                    <input class="text-box" type="text">
+                    <label>Telefono de Contacto:</label>
+                    <input class="text-box" type="number" required>
+                    <label>Identificación fiscal (Cédula RUC):</label>
+                    <input class="text-box" type="text" required>
+                    <label>Descripción de la empresa:</label>
+                    <input class="text-box" type="text" required>
+                    <label>Contraseña:</label>
+                    <input class="text-box" type="password" required>
+                    <label>Confirme su contraseña:</label>
+                    <input class="text-box" type="password" required>
+                    <input class="btn" type="submit" value="Registrarse">
+                </div>  
+            </form>
+        </div>        
+    </div>
+
+
+    <script src="js/login-singnup-modal.js"></script>
 
 </body>
 

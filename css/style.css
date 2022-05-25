@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 
-
 * {
     padding: 0;
     margin: 0;
@@ -11,12 +10,14 @@
     color: white;
     font-size: auto;
 }
-
+a:hover , li:hover{
+    cursor: pointer;
+}
 body{
     background-image: url("../images/blue-1634110.png");
     background-color: #0D3159;
     background-repeat: no-repeat;
-    background-position: center fixed;
+    background-position:center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -57,9 +58,51 @@ body{
     height: 100%;
     width: 100%;
 }
- .btn-menu{
+.btn-menu{
     display: none;
- }
+}
+
+.signup-form-user, .login-form , .signup-form-company{
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #0D3159;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px 1px rgba(0, 0, 0, 0.2);
+    padding: 50px;
+    visibility: hidden;
+    opacity: 0;
+}
+.form1{
+    width: 500px;
+    padding: 20px 50px;
+    
+}
+
+.form1 .close{
+    text-align: right;
+    font-size: 50px;
+    cursor: pointer;
+}
+
+.form1 form{
+    display: block;
+    margin: auto;
+}
+.signup-form-user.active, .login-form.active , .signup-form-company.active{
+    top: 50%;
+    transition: .5s;
+    visibility: visible;
+    opacity: 1;
+}
+
+.container.active{
+    filter: blur(20px);
+    transition: .5s;
+    pointer-events: none;
+}
+
 
  @media (max-width: 965px){
     .footer-div{

@@ -1,17 +1,25 @@
-main form > div{
+.body{
+    height: 100vh;
+}
+.form form > div , .main-signup form > div{
     display: flex;
     flex-direction: column;
     margin: auto;
-    gap: 2rem;
+    gap: 0.5rem;
     width: 500px;
-    height: 100vh;
 }
 
-main form div >a{
+.form form div >a , .main-signup form div >a{
     text-decoration: underline;
+    text-align: center;
 }
 
-i{
+.vefify-account{
+    display: flex;
+    justify-content: center;
+}
+
+.form i , .main-signup i{
     font-size: 80px;
 }
 
@@ -23,13 +31,12 @@ i{
 }
 .btn{
     background-color: #0D3159;
-    padding: 10px;
+    padding: 5px;
     border-radius: 10px;    
     border: 1px solid black;
     font-size: 20px;
+    height: 50px;
 }
-
-
 
 .btn2{
     background-color: #0D3159;
@@ -56,14 +63,15 @@ i{
     flex-direction: column;
 }
 
-.btn-area{
+.btn-area-login{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 20px;
+    padding: 10px;
 }
 
-.nav-menu-vertical{
+.nav-menu-vertical2{
     width: 317px;
     border-color: black;
+    
 }

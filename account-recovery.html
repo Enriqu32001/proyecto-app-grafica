@@ -15,7 +15,7 @@
 
 </head>
 
-<body>
+<body class="body">
     <header>
         <div class="nav-menu">
             <a href="index.html">
@@ -39,23 +39,27 @@
         </div>
     </header>
 
-    <main>
-        <div class="nav-menu-horizontal">
-            <div class="header">
-                <i class="fa-regular fa-circle-user"></i>
-                <h1>Recuperar Contraseña</h1>
+    <main class="main-signup">
+        <form method="post">
+            <div class="nav-menu-horizontal">
+                <div class="header">
+                    <i class="fa-regular fa-circle-user"></i>
+                    <h1>Recuperar Contraseña</h1>
+                </div>
+                <div class="user-name">
+                    <label class="">Ingrese su correo con el que creo su cuenta:</label>
+                    <input class="text-box" type="email" required>
+                </div>
+                <div class="btn-area">
+                    <input class="btn" type="submit" value="Enviar">
+                </div>
+                <div class="vefify-account">
+                    <label style="text-decoration: underline; text-align: center;">Recibirás un mensaje a tu correo para
+                    verificar la información</label>
+                </div>
             </div>
-            <div class="user-name">
-                <label class="">Ingrese su correo con el que creo su cuenta:</label>
-                <input class="text-box" type="email">
-            </div>
-            <div class="btn-area">
-                <input class="btn" type="button" value="Registrarse">
-            </div>
-            <label style="text-decoration: underline; text-align: center;">Recibirás un mensaje a tu correo para verificar la información</label>
             
-
-        </div>
+        </form>
     </main>
 </body>
 
