@@ -1,4 +1,4 @@
-main > div{
+main form > div{
     display: flex;
     flex-direction: column;
     margin: auto;
@@ -7,7 +7,7 @@ main > div{
     height: 100vh;
 }
 
-main div >a{
+main form div >a{
     text-decoration: underline;
 }
 
@@ -60,6 +60,7 @@ i{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 20px;
 }
 
 .nav-menu-vertical{

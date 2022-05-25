@@ -41,44 +41,45 @@
     </header>
 
     <main>
-        <div class="nav-menu-horizontal">
-            <div class="header">
-                <i class="fa-regular fa-circle-user"></i>
-                <h1>Registro del Representante</h1>
+        <form method="post">
+            <div class="nav-menu-horizontal">
+                <div class="header">
+                    <i class="fa-regular fa-circle-user"></i>
+                    <h1>Registro del Representante</h1>
+                </div>
+                <div class="user-name">
+                    <label class="">Nombre:</label>
+                    <input class="text-box" type="text" required>
+                    <label class="">Apellido:</label>
+                    <input class="text-box" type="text" required>
+                    <label class="">Correo:</label>
+                    <input class="text-box" type="email" required>
+                </div>
+    
+                <div class="header">
+                    <h1>Informacion de la Empresa</h1>
+                </div>
+    
+                <div class="password">
+                    <label>Nombre de la Empresa:</label>
+                    <input class="text-box" type="text">
+                    <label>Telefono de Contacto:</label>
+                    <input class="text-box" type="number" required>
+                    <label>Identificación fiscal (Cédula RUC):</label>
+                    <input class="text-box" type="text" required>
+                    <label>Descripción de la empresa:</label>
+                    <input class="text-box" type="text" required>
+                    <label>Contraseña:</label>
+                    <input class="text-box" type="password" required>
+                    <label>Confirme su contraseña:</label>
+                    <input class="text-box" type="password" required>
+                </div>
+                <div class="btn-area">
+                    <input class="btn" type="submit" value="Registrarse">
+                </div>               
+    
             </div>
-            <div class="user-name">
-                <label class="">Nombre:</label>
-                <input class="text-box" type="text">
-                <label class="">Apellido:</label>
-                <input class="text-box" type="text">
-                <label class="">Correo:</label>
-                <input class="text-box" type="email">
-            </div>
-
-            <div class="header">
-                <h1>Informacion de la Empresa</h1>
-            </div>
-
-            <div class="password">
-                <label>Nombre de la Empresa:</label>
-                <input class="text-box" type="text">
-                <label>Telefono de Contacto:</label>
-                <input class="text-box" type="number" >
-                <label>Identificación fiscal (Cédula RUC):</label>
-                <input class="text-box" type="text">
-                <label>Descripción de la empresa:</label>
-                <input class="text-box" type="text">
-                <label>Contraseña:</label>
-                <input class="text-box" type="password">
-                <label>Confirme su contraseña:</label>
-                <input class="text-box" type="password">
-            </div>
-            <div class="btn-area">
-                <input class="btn" type="button" value="Registrarse">
-            </div>
-            
-
-        </div>
+        </form>
     </main>
 </body>
 

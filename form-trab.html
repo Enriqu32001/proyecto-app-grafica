@@ -53,92 +53,96 @@
 
     <main>
         <div class="profile-info">
-            
+
             <div>
                 <h1>Mi perfil</h1>
-                <div class="profile-info-colums">
-                    <div>
-                        <div class="user-name">
-                            <label class="">Nombre: </label>
-                            <input class="text-box" type="text">
-                        </div>
-                        <div class="user-name">
-                            <label class="">Apellido:</label>
-                            <input class="text-box" type="text">
-                        </div>
-                        <div class="user-name">
-                            <label class="">Fecha de Nacimiento:</label>
-                            <input class="text-box" type="date">
-                        </div>
-                        <div class="user-name">
-                            <label class="">Cedula de Ciudadania:</label>
-                            <input class="text-box" type="text">
-                        </div>
-                        <div class="user-name">
-                            <label class="">Correo</label>
-                            <input class="text-box" type="email">
-                        </div>
-                    </div>
-                    <div class="profile-info-img">
-                        <img src="images/blank-profile.png">
-                        <input class="nav-menu-btnIni" style="border-radius: 10px;" type="button" value="Subir Foto">
-                    </div>
-                </div>
-                <div class="profile-info-colums">
-                    <div>
-                        <div class="user-name">
-                            <label class="">Dirección:</label>
-                            <input class="text-box" type="text">
-                        </div>
-                        <div class="user-name">
-                            <label class="">Teléfono:</label>
-                            <input class="text-box" type="text">
-                        </div>
-                    </div>
-                    <div>
-                        <div class="user-name">
-                            <label class="">Segunda Dirección (opcional):</label>
-                            <input class="text-box" type="text">
-                        </div>
-                        <div class="user-name">
-                            <label class="">Segundo Teléfono (opcional):</label>
-                            <input class="text-box" type="text">
-                        </div>
-                    </div>
-                </div>
-
-                <div>
-                    <h1>Estudios Realizados</h1>
-                    <div class="est-re">
+                <form action="">
+                    <div class="profile-info-colums">
                         <div>
                             <div class="user-name">
-                                <label class="">Primarios: </label>
+                                <label class="">Nombre: </label>
+                                <input class="text-box" type="text" required>
+                            </div>
+                            <div class="user-name">
+                                <label class="">Apellido:</label>
+                                <input class="text-box" type="text" required>
+                            </div>
+                            <div class="user-name">
+                                <label class="">Fecha de Nacimiento:</label>
+                                <input class="text-box" type="date" required>
+                            </div>
+                            <div class="user-name">
+                                <label class="">Cedula de Ciudadania:</label>
+                                <input class="text-box" type="text" required>
+                            </div>
+                            <div class="user-name">
+                                <label class="">Correo</label>
+                                <input class="text-box" type="email" required>
+                            </div>
+                        </div>
+                        <div class="profile-info-img">
+                            <img src="images/blank-profile.png">
+                            <input class="nav-menu-btnIni" style="border-radius: 10px;" type="submit"
+                                value="Subir Foto">
+                        </div>
+                    </div>
+
+                    <div class="profile-info-colums">
+                        <div>
+                            <div class="user-name">
+                                <label class="">Dirección:</label>
                                 <input class="text-box" type="text">
                             </div>
                             <div class="user-name">
-                                <label class="">Secundarios: </label>
+                                <label class="">Teléfono:</label>
                                 <input class="text-box" type="text">
                             </div>
-                        
+                        </div>
+                        <div>
                             <div class="user-name">
-                                <label class="">Universitarios: </label>
-                                <input class="text-box" type="text">
-                            </div>
-                            <div class="user-name">
-                                <label class="">Posgrados: </label>
+                                <label class="">Segunda Dirección (opcional):</label>
                                 <input class="text-box" type="text">
                             </div>
                             <div class="user-name">
-                                <label class="">Otros: </label>
+                                <label class="">Segundo Teléfono (opcional):</label>
                                 <input class="text-box" type="text">
                             </div>
                         </div>
                     </div>
-                    <div class="btn-save">
-                        <input class="nav-menu-btnIni" style="border-radius: 10px;" type="button" value="Guardar">
-                    </div>
 
-                </div>
+                    <div>
+                        <h1>Estudios Realizados</h1>
+                        <div class="est-re">
+                            <div>
+                                <div class="user-name">
+                                    <label class="">Primarios: </label>
+                                    <input class="text-box" type="text">
+                                </div>
+                                <div class="user-name">
+                                    <label class="">Secundarios: </label>
+                                    <input class="text-box" type="text">
+                                </div>
+
+                                <div class="user-name">
+                                    <label class="">Universitarios: </label>
+                                    <input class="text-box" type="text">
+                                </div>
+                                <div class="user-name">
+                                    <label class="">Posgrados: </label>
+                                    <input class="text-box" type="text">
+                                </div>
+                                <div class="user-name">
+                                    <label class="">Otros: </label>
+                                    <input class="text-box" type="text">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="btn-save">
+                            <input class="nav-menu-btnIni" style="border-radius: 10px;" type="submit" value="Guardar">
+                        </div>
+
+                    </div>
+                </form>
 
             </div>
         </div>

@@ -46,21 +46,23 @@
                 <i class="fa-regular fa-circle-user"></i>
                 <h1>Registro del Usuario</h1>
             </div>
-            <div class="user-name">
-                <label class="">Nombre:</label>
-                <input class="text-box" type="text">
-                <label class="">Apellido:</label>
-                <input class="text-box" type="text">
-                <label class="">Correo:</label>
-                <input class="text-box" type="email">
-                <label class="">Contraseña:</label>
-                <input class="text-box" type="password">
-                <label class="">Repita su contraseña:</label>
-                <input class="text-box" type="password">
-            </div>
-            <div class="btn-area">
-                <input class="btn" type="button" value="Registrarse">
-            </div>
+            <form method="post">
+                <div class="user-name">
+                    <label class="">Nombre:</label>
+                    <input class="text-box" type="text" required>
+                    <label class="">Apellido:</label>
+                    <input class="text-box" type="text" required>
+                    <label class="">Correo:</label>
+                    <input class="text-box" type="email" required>
+                    <label class="">Contraseña:</label>
+                    <input class="text-box" type="password" required>
+                    <label class="">Repita su contraseña:</label>
+                    <input class="text-box" type="password" >
+                </div>
+                <div class="btn-area">
+                    <input class="btn" type="submit" value="Registrarse">
+                </div>
+            </form>
             
 
         </div>
