@@ -82,8 +82,26 @@
                         </div>
                         <div class="profile-info-img">
                             <img src="images/blank-profile.png">
-                            <input class="nav-menu-btnIni" style="border-radius: 10px;" type="submit"
-                                value="Subir Foto">
+                            <div>
+                                <div>
+                                    <div id="webcam-container">
+                                        <video id="video" playsinline autoplay></video>
+                                    </div>
+                                    <canvas id="canvas" width="400px" height="300px"></canvas>
+                                </div>
+                                <div id="message" class="">
+                                    <div>
+                                        <button type="button" id="capturar" onclick="capturar_foto"> capturar foto</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <label class="nav-menu-btnIni btn-file">
+                                    <input class="input-file" type="file" accept="image/*">
+                                    Subir Foto
+                                </label>
+                                <input onclick="init()" class="nav-menu-btnIni btn-file" type="button"value="Tomar Foto">
+                            </div>
                         </div>
                     </div>
 
@@ -197,6 +215,7 @@
         </div>
     </footer>
 
+    <script src="js/webcamera.js"></script>
 </body>
 
 

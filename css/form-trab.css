@@ -4,6 +4,7 @@
     width: auto;
     max-width: 1440px;
     padding: 100px;
+    margin: auto;
 }
 
 .profile-info-colums{
@@ -36,4 +37,16 @@
     justify-items: center;
     align-items: center;
     margin-top: 50px;
+}
+
+.btn-file{
+    border-radius: 10px;
+    cursor: pointer;
+}
+.input-file {
+    display: none;
+}
+
+#webcam-container{
+    border: 1px solid black;
 }
