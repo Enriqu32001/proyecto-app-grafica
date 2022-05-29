@@ -20,49 +20,50 @@
 
 </head>
 
-<body >
+<body>
     <div class="container">
-        <header >
-            <div class="nav-menu">
+        <header>
+            <nav class="nav-menu">
                 <a href="index.html">
-                    <ul class="nav-menu-horizontal">
+                    <ul class="nav-menu-logo">
                         <li><img class="logo-header" src="images/logo.jpg"></li>
                         <li>
                             <h1 href="">Ofertas de Empleo</h1>
                         </li>
                     </ul>
                 </a>
-    
-                <nav>
-                    <ul class="nav-menu-horizontal">
-                        <li><a href="index.html">Inicio </a></li>
-                        <li><a href="buscar-empleo.html">Buscar Empleo</a></li>
-                        <li><a href="contacto.html">Sobre Nosotros</a></li>
-    
-                        <li class="mobile2">
-                            <a  class="nav-menu-btnRegi">Registrarse
-                                <i class="fa-solid fa-chevron-down"></i>
-                            </a>
-    
-                            <ul class="nav-menu-vertical">
-                                <div>
-                                    <li onclick="signupUserToggle()"><a >Como Usuario </a></li>
-                                    <li onclick="signupCompanyToggle()"><a >Como Empresa</a></li>
-                                </div>
-                            </ul>
-                        </li>
-                        <li class="mobile2" onclick="loginToggle()">
-                            <a  class="nav-menu-btnIni">Iniciar sesión</a>
-                        </li>
-                    </ul>
-                </nav>
-    
-                <button class="btn-menu">tocame</button>
-            </div>
+                
+                <input type="checkbox" id="check">
+                <label for="check" class="bar-btn">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+
+                <ul class="nav-menu-horizontal">
+                    <li><a href="index.html">Inicio </a></li>
+                    <li><a href="buscar-empleo.html">Buscar Empleo</a></li>
+                    <li><a href="contacto.html">Sobre Nosotros</a></li>
+
+                    <li>
+                        <a class="nav-menu-btnRegi">Registrarse
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </a>
+
+                        <ul class="nav-menu-vertical">
+                            <div>
+                                <li onclick="signupUserToggle()"><a>Como Usuario </a></li>
+                                <li onclick="signupCompanyToggle()"><a>Como Empresa</a></li>
+                            </div>
+                        </ul>
+                    </li>
+                    <li onclick="loginToggle()">
+                        <a class="nav-menu-btnIni">Iniciar sesión</a>
+                    </li>
+                </ul>
+            </nav>
         </header>
-    
-    
-        <main >
+
+
+        <main>
             <div class="frame-main">
                 <section>
                     <div>
@@ -73,7 +74,7 @@
                         <input class="search-bar-button" type="button" name="btnBusc" value="Buscar">
                     </div>
                 </section>
-    
+
                 <section class="frequent-search">
                     <div>
                         <h4>Búsquedas Frecuentes.</h4>
@@ -99,13 +100,13 @@
                             Comercial</a>
                     </div>
                 </section>
-    
+
                 <section class="added-oferts">
-    
+
                     <h4>Últimas Ofertas Agregadas.</h4>
                     <div>
                         <a class="mobile" href="/buscar-empleo-info.html">
-    
+
                             <h1>ESPECIALISTA DE MARKETING</h1>
                             <p>Se requiere Especialista de Marketing con un nivel de ingles Avanzado (B2)
                                 con experiencia en el campo laboral de productos de Gelatina,
@@ -121,15 +122,15 @@
                             </div>
                         </a>
                         <a href="buscar-empleo-info.html">
-    
+
                             <h1>Visitador Comercial Motorizado (Empleo Temporal)</h1>
-    
+
                             <p>Descripción del Trabajo:
                                 Realizar visitas a pulperías del país.
                                 Registrar su visita desde una App Móvil guardando la
                                 ubicación e información de la pulpería...
                             </p>
-    
+
                             <div>
                                 <p>Lun, Mar, Mie, Jue y Vier</p>
                                 <p>Hora 8:00 am. - 5:00 pm.</p>
@@ -140,15 +141,15 @@
                             </div>
                         </a>
                         <a href="buscar-empleo-info.html">
-    
+
                             <h1>OFICIAL DE CRÉDITO</h1>
-    
-    
+
+
                             <p>Persona encargada de la administración de cartera de crédito, cumplimiento con las
                                 políticas
                                 establecidas por la institución para el otorgamiento de créditos...
                             </p>
-    
+
                             <div>
                                 <p>Sab, Dom y Lunes</p>
                                 <p>Hora 8:00 am. - 5:00 pm.</p>
@@ -159,18 +160,18 @@
                             </div>
                         </a>
                     </div>
-    
-                    <a href="buscar-empleo.html">Ver Más Ofertas.</a>
+
+                    <a class="see-more" href="buscar-empleo.html">Ver Más Ofertas.</a>
                 </section>
-    
+
                 <section>
                     <aside>
                         <img class="publisher" src="images/banner-adidas.jpg">
                     </aside>
                 </section>
-    
+
                 <section class="Opportunity-sector">
-    
+
                     <h3>Sectores con más oportunidades</h3>
                     <div class="as">
                         <a class="mobile" href="buscar-empleo.html">
@@ -198,17 +199,17 @@
                             <p>Sanidad y Salud</p>
                         </a>
                     </div>
-                    <a href="buscar-empleo.html">Ver Más Sectores.</a>
+                    <a class="see-more" href="buscar-empleo.html">Ver Más Sectores.</a>
                 </section>
             </div>
         </main>
-    
+
         <footer>
             <div class="footer">
                 <div class="footer-div">
                     <div>
                         <h5>Acerca de nosotros</h5>
-                        <p>
+                        <p class="footer-p">
                             Innovación tecnológica para la gestión de empleos.
                             <br>
                             <br>
@@ -227,7 +228,7 @@
                             </li>
                             <li><a href="contactenos.html">Contáctanos</a></li>
                         </ul>
-    
+
                     </div>
                     <div>
                         <h5>Detalles de contacto</h5>
@@ -239,7 +240,7 @@
                                 <a href="">Ofertadeempleo.com</a>
                             </li>
                         </ul>
-    
+
                     </div>
                 </div>
                 <h5>
@@ -262,7 +263,7 @@
             </div>
             <form method="post">
 
-                <div class=" user-name">
+                <div >
                     <div class="user-name">
                         <label class="">Nombre de Usuario</label>
                         <input class="text-box" type="text" required>
@@ -275,7 +276,10 @@
                     <div class="btn-area-login">
                         <input class="btn" type="submit" style="text-decoration: none;" value="Iniciar Sesion">
                         <li>
-                            <a  class="btn2">¿Aún no tienes cuenta? mira aquí </a>
+                            <div class="btn2">
+                                <a >¿Aún no tienes cuenta? mira aquí </a>
+                            </div>
+                            
                             <ul class="nav-menu-vertical nav-menu-vertical2">
                                 <div>
                                     <li><a href="create-account.html">Como Usuario</a></li>
@@ -309,14 +313,14 @@
                     <label class="">Contraseña:</label>
                     <input class="text-box" type="password" required>
                     <label class="">Repita su contraseña:</label>
-                    <input class="text-box" type="password" >
+                    <input class="text-box" type="password">
                     <div class="btn-area">
-                    <input class="btn" type="submit" value="Registrarse">
+                        <input class="btn" type="submit" value="Registrarse">
+                    </div>
                 </div>
-                </div>
-                
+
             </form>
-            
+
 
         </div>
     </div>
@@ -325,7 +329,7 @@
         <div class="form1 nav-menu-horizontal">
             <div class="close" onclick="signupCompanyToggle()">&times;</div>
             <form method="post">
-                
+
                 <div class="user-name">
                     <div class="header">
                         <i class="fa-regular fa-circle-user"></i>
@@ -340,7 +344,7 @@
 
                     <div class="header">
                         <h1>Informacion de la Empresa</h1>
-                    </div>    
+                    </div>
                     <label>Nombre de la Empresa:</label>
                     <input class="text-box" type="text">
                     <label>Telefono de Contacto:</label>
@@ -354,9 +358,9 @@
                     <label>Confirme su contraseña:</label>
                     <input class="text-box" type="password" required>
                     <input class="btn" type="submit" value="Registrarse">
-                </div>  
+                </div>
             </form>
-        </div>        
+        </div>
     </div>
 
 

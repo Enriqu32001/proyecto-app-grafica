@@ -58,11 +58,10 @@ body{
     height: 100%;
     width: 100%;
 }
-.btn-menu{
-    display: none;
-}
 
-.signup-form-user, .login-form , .signup-form-company{
+.signup-form-user, 
+.login-form , 
+.signup-form-company{
     position: absolute;
     top: 0%;
     left: 50%;
@@ -71,13 +70,8 @@ body{
     border-radius: 10px;
     box-shadow: 3px 3px 10px 1px rgba(0, 0, 0, 0.2);
     padding: 50px;
-    visibility: hidden;
+    display: none;
     opacity: 0;
-}
-.form1{
-    width: 500px;
-    padding: 20px 50px;
-    
 }
 
 .form1 .close{
@@ -90,11 +84,14 @@ body{
     display: block;
     margin: auto;
 }
-.signup-form-user.active, .login-form.active , .signup-form-company.active{
-    top: 50%;
+.signup-form-user.active, 
+.login-form.active , 
+.signup-form-company.active{
+    top: 50vh;
     transition: .5s;
-    visibility: visible;
+    display: block;
     opacity: 1;
+    width: 50vw;
 }
 
 .container.active{
@@ -103,58 +100,8 @@ body{
     pointer-events: none;
 }
 
-
- @media (max-width: 965px){
-    .footer-div{
-        display: grid;
-        grid-template-columns: 1fr;
-        padding: 10px;
-        width: 800px;
-        gap: 20px;
-        justify-items: start;
+@media (max-width: 600px) {
+    .frame-main{
+        padding: 0 5px ;
     }
-
-    .nav-menu-horizontal{
-        display: none;
-    }
-    
-    .nav-menu-btnRegi{
-        border-radius: 10px;
-    }
-    .nav-menu-btnIni{
-        border-radius: 10px;
-    }
-
-    /*nav ul{
-        
-        flex-direction: column;
-        background-color: #777777;
-        position: fixed;
-        left: 0;
-        top: 80px;
-        width: 100%;
-        padding: 50px 0;
-        gap: 20px;
-        height: calc(100% - 80px);
-        overflow-y: auto;
-    }*/
-
-    
-
-    /*nav ul li :hover{
-        border: 1px solid #0D3159;
-        
-    }
-    .nav-menu-btnRegi{
-        border-radius: 10px;
-    }
-    .nav-menu-btnIni{
-        border-radius: 10px;
-    }
-
-    .btn-menu{
-        display:block;
-    }*/
-
-
- }
+}

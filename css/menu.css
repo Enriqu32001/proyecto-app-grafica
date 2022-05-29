@@ -1,4 +1,4 @@
-header{
+header {
     background-color: rgba(0, 0, 0, 0.20);
     padding: auto;
     display: flex;
@@ -10,55 +10,61 @@ header{
     border-radius: 50%;
 }
 
-.nav-menu{
+.nav-menu {
     display: flex;
-    padding: 0 50px;
     justify-content: space-between;
+    flex-direction: row;
     align-items: center;
-    width: 1340px;
-    margin: auto;
     font-size: 100%;
-
+    width: 100%;
+    padding: 0 10px;
 }
-.nav-menu .nav-menu-horizontal {
+
+.nav-menu-logo {
     list-style: none;
     display: flex;
     align-items: center;
-    font-weight:lighter;
+    font-weight: lighter;
+    width: 100%;
+    
+}
+
+.nav-menu .nav-menu-horizontal{
+    display: flex;
 }
 
 .nav-menu-vertical {
-    position:absolute;
+    position: absolute;
     display: none;
-    list-style: none;    
+    list-style: none;
     background-color: #0D3159;
     width: 160px;
     border: 1px solid white;
     justify-content: center;
     text-align: center;
     border-top: none;
-    
+
 }
 
-.nav-menu-horizontal li:hover .nav-menu-vertical{
+.nav-menu-horizontal li:hover .nav-menu-vertical {
     display: block;
 }
 
-.nav-menu-vertical div{
+.nav-menu-vertical div {
     display: flex;
     flex-direction: column;
     margin: 15px 0;
 }
 
-.nav-menu-vertical div li:hover{
-    background-color: white; 
+.nav-menu-vertical div li:hover {
+    background-color: white;
 }
 
-.nav-menu-vertical div li:hover a{
+.nav-menu-vertical div li:hover a {
     color: #0D3159;
 }
 
-.nav-menu-vertical div li{
+.nav-menu-vertical div li {
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -67,19 +73,19 @@ header{
     margin-right: 0;
 }
 
-.nav-menu li{
-    margin-right: 2rem;
+.nav-menu li {
+    margin-right: 5px;
     font-weight: lighter;
-    
+
 }
 
-.nav-menu h1{
+.nav-menu h1 {
     font-size: 25px;
 }
 
 .nav-menu-btnRegi {
     background-color: #0D3159;
-    border-radius: 10px 0 0 10px;  
+    border-radius: 10px 0 0 10px;
     font-style: normal;
     border: 1px solid;
     border-color: white;
@@ -92,7 +98,7 @@ header{
 }
 
 .nav-menu-btnIni {
-    
+
     background-color: #0D3159;
     border-radius: 0 10px 10px 0;
     font-style: normal;
@@ -107,68 +113,75 @@ header{
     overflow: hidden;
 }
 
-.profile{
+.nav-sub-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.profile {
     display: flex;
     justify-items: center;
     align-items: center;
     gap: 10px;
 }
-.profile > i{
-    font-size: 30px; 
-    height: 100%;    
+
+.profile>i {
+    font-size: 30px;
+    height: 100%;
 }
 
-.nav-profile{
+.nav-profile {
     width: auto;
 }
 
-@media (max-width: 1000px){
-    .nav-menu-btnIni{
-        display: none;
-    }
-    .nav-menu-btnRegi{
-        display: none;
-    }
-    .added-oferts div a{
-        display: none;
-    }
-    .added-oferts .mobile{
-        display: block;
-    }
-    .frequent-search div a{
-        display: none;
-    }    
-    .frequent-search .mobile{
-        display: block;
-    }
+.bar-btn {
+    display: block;
+    font-size: 45px;
+    margin-right: 10px;
+    cursor: pointer;
+    display: none;
+}
 
-    .Opportunity-sector .as a{
-        display:none;
-    }    
-    .Opportunity-sector .as .mobile{
-        display: block;
-    }
+#check {
+    display: none;
+}
 
-    .mobile2{
-        display: none;
-    }
+#check:checked~.nav-menu-horizontal {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    transition: 3s;
+    align-items: center;
+}
 
-
-
-    /*nav ul{
-        
-        flex-direction: column;
-        background-color: #777777;
-        position: fixed;
-        left: 0;
-        top: 80px;
-        width: 100%;
-        padding: 50px 0;
-        gap: 20px;
-        height: calc(100% - 80px);
-        overflow-y: auto;
-    }*/
+#check:checked~.bar-btn {
+    position: fixed;
+    right: 10px;
 }
 
 
 
+@media (max-width: 1000px) {
+
+    .nav-menu>.nav-menu-horizontal {
+        display: none;
+        position: fixed;
+        width: 100vw;
+        top: 0;
+        left: 0;
+        background-color: #0D3159;
+        gap: 50px;
+        padding-top: 50px;
+    }
+
+    .bar-btn {
+        display: block;
+        z-index: 50;
+    }
+
+    .nav-menu-btnRegi, .nav-menu-btnIni{
+        border-radius: 10px;
+    }
+}

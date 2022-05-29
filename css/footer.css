@@ -12,11 +12,17 @@ footer {
 
 .footer-div {
    display: grid;
-   grid-template-columns: repeat(3, 1fr);
+   grid-template-columns: repeat(auto-fit, minmax(200px , 1fr));
    max-width: 1000px;
-   justify-items: center;
+   justify-content: center;
    margin: auto;
    padding: 10px;
+}
+
+.footer-div >div {
+   display: flex;
+   flex-direction: column;
+   width: 100%;
 }
 
 .footer h5 {
@@ -38,6 +44,8 @@ footer {
 }
 
 
+
+
 /*.frame-main :hover{
     border: 1px solid yellow;
 }
@@ -49,16 +57,18 @@ footer {
     border: 1px solid white;
 }*/
 
-@media (max-width: 965px) {
+@media (max-width: 800px) {
    .footer-div {
       display: flex;
-      flex-direction: column;
+      flex-wrap: wrap;
       padding: 10px;
-      width: 800px;
       gap: 20px;
       justify-items: start;
    }
-   .footer-div >div p{
-      width: 100%;
+
+   .footer-div > div {
+      max-width: 300px;
+      text-align: center;
+
    }
 }
