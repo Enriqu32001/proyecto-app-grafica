@@ -3,13 +3,12 @@
     flex-direction: column;
     width: auto;
     max-width: 1440px;
-    padding: 100px;
     margin: auto;
 }
 
 .profile-info-colums{
     display: grid;
-    grid-template-columns: repeat(2,auto);
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
     gap: 20px;
     
 }

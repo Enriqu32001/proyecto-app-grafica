@@ -101,7 +101,7 @@ body{
 }
 
 @media (max-width: 600px) {
-    .frame-main{
-        padding: 0 5px ;
+    .frame-main, .profile-info, .about , main{
+        padding: 30px 5px ;
     }
 }

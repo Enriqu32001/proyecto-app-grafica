@@ -10,70 +10,88 @@
     <script src="https://kit.fontawesome.com/7f3c790161.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/menu.css">
-    <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/footer.css">
+    
 
 
 </head>
 
 <body>
     <header>
-        <div class="nav-menu">
+        <nav class="nav-menu">
             <a href="index.html">
-                <ul class="nav-menu-horizontal">
+                <ul class="nav-menu-logo">
                     <li><img class="logo-header" src="images/logo.jpg"></li>
                     <li>
-                        <h1 >Ofertas de Empleo</h1>
+                        <h1 href="">Ofertas de Empleo</h1>
                     </li>
                 </ul>
             </a>
-            <nav>
-                <ul class="nav-menu-horizontal">
-                    <li><a href="index.html">Inicio </a></li>
-                    <li><a href="buscar-empleo.html">Buscar Empleo</a></li>
-                    <li><a href="contacto.html">Sobre Nosotros</a></li>
+            
+            <input type="checkbox" id="check">
+            <label for="check" class="bar-btn">
+                <i class="fa-solid fa-bars"></i>
+            </label>
 
-                </ul>
-            </nav>
+            <ul class="nav-menu-horizontal">
+                <li><a href="index.html">Inicio </a></li>
+                <li><a href="buscar-empleo.html">Buscar Empleo</a></li>
+                <li><a href="contacto.html">Sobre Nosotros</a></li>
 
-            <button class="btn-menu">tocame</button>
-        </div>
+                <li>
+                    <a class="nav-menu-btnRegi">Registrarse
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </a>
+
+                    <ul class="nav-menu-vertical">
+                        <div>
+                            <li onclick="signupUserToggle()"><a>Como Usuario </a></li>
+                            <li onclick="signupCompanyToggle()"><a>Como Empresa</a></li>
+                        </div>
+                    </ul>
+                </li>
+                <li onclick="loginToggle()">
+                    <a class="nav-menu-btnIni">Iniciar sesión</a>
+                </li>
+            </ul>
+        </nav>
     </header>
 
     <main>
-        <div class="nav-menu-horizontal">
+
+        <form class="nav-menu-horizontal-contact" method="post">
             <div class="header">
-                <i class="fa-solid fa-phone"></i>
-                <h1>Contáctanos</h1>
+                
+                <h1> <i class="fa-solid fa-phone"></i> Contáctanos</h1>
             </div>
             <div class="user-name">
                 <label class="">Nombre</label>
-                <input class="text-box" type="text">
+                <input class="text-box" type="text" required>
             </div>
 
             <div class="user-name">
                 <label class="">Apellido:</label>
-                <input class="text-box" type="text">
+                <input class="text-box" type="text" required>
             </div>
 
             <div class="user-name">
                 <label class="">Telefono:</label>
-                <input class="text-box" type="number">
+                <input class="text-box" type="number" required>
             </div>
 
             <div class="user-name">
                 <label class="">Correo:</label>
-                <input class="text-box" type="email">
+                <input class="text-box" type="email" required>
             </div>
 
             <div class="user-name">
                 <label class="">Consulta</label>
-                <input class="text-box" type="text">
+                <input class="text-box" type="text" required>
             </div>
 
-            <input class="btn" type="button" value="Enviar">
-        
-        </div>
+            <input class="btn" type="submit" value="Enviar">
+        </form >
     </main>
 
     <footer>

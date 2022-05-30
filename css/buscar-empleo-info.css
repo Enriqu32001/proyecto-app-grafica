@@ -22,7 +22,7 @@ main{
     flex-direction: column;
     background-color: #0D3159;
     gap: 50px;
-    width: 1000px;
+    max-width: 1000px;
     padding: 50px;
 }
 
@@ -32,11 +32,17 @@ main{
 }
 
 .menu-info{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
     
 }
 
 .publisher-items{
     width: 300px;
-    margin: 10px 20px;
+    margin: 10px ;
+}
+
+.menu-info-publisher{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
 }

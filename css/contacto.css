@@ -1,15 +1,8 @@
 body{
-    height: 100vh;
+    height: 100%;
 }
-
-main{
-    display: flex;
-    flex-direction: column;
-}
-
 .about{
-    display: flex;
-    flex-direction: column;
+    display: grid;
     max-width: 1440px;
     margin: auto;
     padding: 50px;
@@ -22,8 +15,7 @@ main{
 }
 
 .about-us{
-    display: flex;
-    flex-direction: column;
+    display: grid;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -32,12 +24,25 @@ main{
 }
 
 .about-mision-vision{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(100px, 1fr));
     text-align: center;
     max-width: 1000px;
     gap: 20px;
 }
 
-p{
-    width: 500px;
+h2{
+    
+    font-weight: bold;
+}
+
+@media (max-width: 600px) {
+    .about{
+        padding: 30px 5px ;
+    }
+
+    .about-mision-vision{
+        display: flex;
+        flex-direction: column;
+    }
 }

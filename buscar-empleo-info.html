@@ -17,43 +17,43 @@
 
 <body>
     <header>
-        <div class="nav-menu">
-            <a href="/index.html">
-                <ul class="nav-menu-horizontal">
+        <nav class="nav-menu">
+            <a href="index.html">
+                <ul class="nav-menu-logo">
                     <li><img class="logo-header" src="images/logo.jpg"></li>
                     <li>
                         <h1 href="">Ofertas de Empleo</h1>
                     </li>
                 </ul>
             </a>
+            
+            <input type="checkbox" id="check">
+            <label for="check" class="bar-btn">
+                <i class="fa-solid fa-bars"></i>
+            </label>
 
-            <nav>
-                <ul class="nav-menu-horizontal">
-                    <li><a href="index.html">Inicio </a></li>
-                    <li><a href="buscar-empleo.html">Buscar Empleo</a></li>
-                    <li><a href="contacto.html">Sobre Nosotros</a></li>
+            <ul class="nav-menu-horizontal">
+                <li><a href="index.html">Inicio </a></li>
+                <li><a href="buscar-empleo.html">Buscar Empleo</a></li>
+                <li><a href="contacto.html">Sobre Nosotros</a></li>
 
-                    <li>
-                        <a href="" class="nav-menu-btnRegi">Registrarse
-                            <i class="fa-solid fa-chevron-down"></i>
-                        </a>
+                <li>
+                    <a class="nav-menu-btnRegi">Registrarse
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </a>
 
-                        <ul class="nav-menu-vertical">
-                            <div>
-                                <li><a href="create-account.html">Como Usuario</a></li>
-                                <li><a href="login-company.html">Como Empresa</a></li>
-                            </div>
-                        </ul>
-                    </li>
-
-                    <li><a href="login.html" class="nav-menu-btnIni">Iniciar sesión</a></li>
-
-                </ul>
-
-            </nav>
-
-            <button class="btn-menu">tocame</button>
-        </div>
+                    <ul class="nav-menu-vertical">
+                        <div>
+                            <li onclick="signupUserToggle()"><a>Como Usuario </a></li>
+                            <li onclick="signupCompanyToggle()"><a>Como Empresa</a></li>
+                        </div>
+                    </ul>
+                </li>
+                <li onclick="loginToggle()">
+                    <a class="nav-menu-btnIni">Iniciar sesión</a>
+                </li>
+            </ul>
+        </nav>
     </header>
 
     <main>
@@ -110,12 +110,19 @@
 
                 <input type="button" class="nav-menu-btnIni btn" value="INSCRIBIRME EN ESTA OFERTA">
             </div>
-            <section >
-                <aside>
-                    <img class="publisher-items" src="images/vertical-bubble-tea-ad-on-blue-ray-pattern-free-vector.jpg">
-                    <img class="publisher-items" src="images/4a66f333332919.56a84344447ec.jpg">
-                </aside>
-            </section>
+            <div class="menu-info-publisher">
+                <section >
+                    <aside>
+                        <img class="publisher-items" src="images/vertical-bubble-tea-ad-on-blue-ray-pattern-free-vector.jpg">
+                    </aside>
+                </section>
+                <section >
+                    <aside>
+                        <img class="publisher-items" src="images/4a66f333332919.56a84344447ec.jpg">
+                    </aside>
+                </section>
+            </div>
+
         </div>
         
     </main>

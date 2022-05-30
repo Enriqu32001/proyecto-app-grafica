@@ -20,42 +20,43 @@
 
 <body>
     <header>
-        <div class="nav-menu">
-            <a href="/index.html">
-                <ul class="nav-menu-horizontal">
+        <nav class="nav-menu">
+            <a href="index.html">
+                <ul class="nav-menu-logo">
                     <li><img class="logo-header" src="images/logo.jpg"></li>
                     <li>
                         <h1 href="">Ofertas de Empleo</h1>
                     </li>
                 </ul>
             </a>
-            <nav>
-                <ul class="nav-menu-horizontal">
-                    <li><a href="/index.html">Inicio </a></li>
-                    <li><a href="/buscar-empleo.html">Buscar Empleo</a></li>
-                    <li><a href="/contacto.html">Sobre Nosotros</a></li>
 
-                    <li>
-                        <a href="" class="nav-menu-btnRegi">Registrarse
-                            <i class="fa-solid fa-chevron-down"></i>
-                        </a>
+            <input type="checkbox" id="check">
+            <label for="check" class="bar-btn">
+                <i class="fa-solid fa-bars"></i>
+            </label>
 
-                        <ul class="nav-menu-vertical">
-                            <div>
-                                <li><a href="/create-account.html">Como Usuario</a></li>
-                                <li><a href="/login-company.html">Como Empresa</a></li>
-                            </div>
-                        </ul>
-                    </li>
-                    <li><a href="/login.html" class="nav-menu-btnIni">Iniciar sesión</a></li>
+            <ul class="nav-menu-horizontal">
+                <li><a href="index.html">Inicio </a></li>
+                <li><a href="buscar-empleo.html">Buscar Empleo</a></li>
+                <li><a href="contacto.html">Sobre Nosotros</a></li>
 
+                <li>
+                    <a class="nav-menu-btnRegi">Registrarse
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </a>
 
-                </ul>
-
-            </nav>
-
-            <button class="btn-menu">tocame</button>
-        </div>
+                    <ul class="nav-menu-vertical">
+                        <div>
+                            <li onclick="signupUserToggle()"><a>Como Usuario </a></li>
+                            <li onclick="signupCompanyToggle()"><a>Como Empresa</a></li>
+                        </div>
+                    </ul>
+                </li>
+                <li onclick="loginToggle()">
+                    <a class="nav-menu-btnIni">Iniciar sesión</a>
+                </li>
+            </ul>
+        </nav>
     </header>
 
     <main>
@@ -300,14 +301,15 @@
                                 </a>
                             </div>
                         </section>
-                        <section>
-                            <aside>
-                                <img class="publisher" src="images/banner-adidas.jpg">
-                            </aside>
-                        </section>
                     </div>
                 </div>
+
             </div>
+            <section>
+                <aside>
+                    <img class="publisher" src="images/banner-adidas.jpg">
+                </aside>
+            </section>
 
             <div class="number-page">
                 <a class="number-page-selected" href="buscar-empleo.html">1</a>

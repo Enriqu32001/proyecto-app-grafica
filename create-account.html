@@ -18,26 +18,43 @@
 
 <body class="body">
     <header>
-        <div class="nav-menu">
+        <nav class="nav-menu">
             <a href="index.html">
-                <ul class="nav-menu-horizontal">
+                <ul class="nav-menu-logo">
                     <li><img class="logo-header" src="images/logo.jpg"></li>
                     <li>
                         <h1 href="">Ofertas de Empleo</h1>
                     </li>
                 </ul>
             </a>
-            <nav>
-                <ul class="nav-menu-horizontal">
-                    <li><a href="index.html">Inicio </a></li>
-                    <li><a href="buscar-empleo.html">Buscar Empleo</a></li>
-                    <li><a href="contacto.html">Sobre Nosotros</a></li>
+            
+            <input type="checkbox" id="check">
+            <label for="check" class="bar-btn">
+                <i class="fa-solid fa-bars"></i>
+            </label>
 
-                </ul>
-            </nav>
+            <ul class="nav-menu-horizontal">
+                <li><a href="index.html">Inicio </a></li>
+                <li><a href="buscar-empleo.html">Buscar Empleo</a></li>
+                <li><a href="contacto.html">Sobre Nosotros</a></li>
 
-            <button class="btn-menu">tocame</button>
-        </div>
+                <li>
+                    <a class="nav-menu-btnRegi">Registrarse
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </a>
+
+                    <ul class="nav-menu-vertical">
+                        <div>
+                            <li onclick="signupUserToggle()"><a>Como Usuario </a></li>
+                            <li onclick="signupCompanyToggle()"><a>Como Empresa</a></li>
+                        </div>
+                    </ul>
+                </li>
+                <li onclick="loginToggle()">
+                    <a class="nav-menu-btnIni">Iniciar sesión</a>
+                </li>
+            </ul>
+        </nav>
     </header>
 
     <main class="main-signup">

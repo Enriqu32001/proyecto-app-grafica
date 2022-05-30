@@ -26,11 +26,12 @@ header {
     align-items: center;
     font-weight: lighter;
     width: 100%;
-    
+
 }
 
-.nav-menu .nav-menu-horizontal{
+.nav-menu .nav-menu-horizontal {
     display: flex;
+    align-items: center;
 }
 
 .nav-menu-vertical {
@@ -39,6 +40,7 @@ header {
     list-style: none;
     background-color: #0D3159;
     width: 160px;
+
     border: 1px solid white;
     justify-content: center;
     text-align: center;
@@ -48,6 +50,19 @@ header {
 
 .nav-menu-horizontal li:hover .nav-menu-vertical {
     display: block;
+}
+
+.nav-menu-horizontal-contact {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: auto;
+    padding: 50px 0;
+    gap: 20px;
+}
+
+.nav-menu-horizontal-contact i {
+    font-size: 50px;
 }
 
 .nav-menu-vertical div {
@@ -161,6 +176,10 @@ header {
     right: 10px;
 }
 
+.btn-area-login {
+    justify-content: center;
+}
+
 
 
 @media (max-width: 1000px) {
@@ -181,7 +200,8 @@ header {
         z-index: 50;
     }
 
-    .nav-menu-btnRegi, .nav-menu-btnIni{
+    .nav-menu-btnRegi,
+    .nav-menu-btnIni {
         border-radius: 10px;
     }
 }

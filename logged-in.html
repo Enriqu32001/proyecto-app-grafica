@@ -19,38 +19,40 @@
 </head>
 
 <body>
+    
+
     <header>
-        <div class="nav-menu">
+        <nav class="nav-menu">
             <a href="index.html">
-                <ul class="nav-menu-horizontal">
+                <ul class="nav-menu-logo">
                     <li><img class="logo-header" src="images/logo.jpg"></li>
                     <li>
                         <h1 href="">Ofertas de Empleo</h1>
                     </li>
                 </ul>
             </a>
+            
+            <input type="checkbox" id="check">
+            <label for="check" class="bar-btn">
+                <i class="fa-solid fa-bars"></i>
+            </label>
 
-            <nav>
-                <ul class="nav-menu-horizontal">
-                    <li><a href="index.html">Inicio </a></li>
-                    <li><a href="buscar-empleo.html">Buscar Empleo</a></li>
-                    <li><a href="contacto.html">Sobre Nosotros</a></li>
+            <ul class="nav-menu-horizontal">
+                <li><a href="index.html">Inicio </a></li>
+                <li><a href="buscar-empleo.html">Buscar Empleo</a></li>
+                <li><a href="contacto.html">Sobre Nosotros</a></li>
 
-                    <li class="nav-menu-btnIni nav-profile">
-                        <a class="profile" href="/form-trab.html">
-                            <i class="fa-solid fa-circle-user"></i>
-                            Perfil
-                        </a>
-                    </li>
-
-
-
-                </ul>
-
-            </nav>
-
-            <button class="btn-menu">tocame</button>
-        </div>
+                <li class="nav-menu-btnIni nav-profile" style="border-radius: 10px; ">
+                    <a class="profile" href="/form-trab.html">
+                        <i class="fa-solid fa-circle-user"></i>
+                        Perfil
+                    </a>
+                </li>
+                <li class="nav-menu-btnIni" style="display: flex; align-items: center; border-radius: 10px; width:auto; height: 30px; ">
+                    <a href="index.html" >Cerrar Sesión</a>
+                </li>
+            </ul>
+        </nav>
     </header>
 
     <main>
